@@ -2,6 +2,12 @@
 # Simple Laravel 9 Blog App 
 ### Post, Comment and Authentication
 
+# Requirements
+
+[![php](https://img.shields.io/badge/PHP-8.1-blue)](https://img.shields.io/badge/PHP-8.1-blue)
+[![MySql](https://img.shields.io/badge/MySql-8.0-orange)](https://img.shields.io/badge/MySql-8.0-orange)
+[![Laravel](https://img.shields.io/badge/Laravel-9.0-yellowgreen)](https://img.shields.io/badge/Laravel-9.0-yellowgreen)
+
 # Installation steps
 
 ### <i>1. Clone the repository<i>
@@ -12,6 +18,8 @@ git clone https://github.com/deva7mad/simple-blog.git
 ### <i>2. Configure the database connection<i>
 ````
 cd simple-blog/
+
+compser install
 
 cp .env.example .env
 ````
