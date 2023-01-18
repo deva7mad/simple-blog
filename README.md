@@ -21,7 +21,7 @@ cp .env.example .env
 ````
 php artisan migrate --seed
 ````
-#### <i>This</i> will see the database with 30 posts and for each post 5 comments each comment associated with a user.
+#### <i>This</i> will seed the database with 30 posts and for each post 5 comments each comment associated with a user.
 
 ### <i>4. Storage Link </i>
 ````
