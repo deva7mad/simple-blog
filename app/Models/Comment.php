@@ -22,4 +22,13 @@ class Comment extends Model
     {
         return $this->belongsTo(Post::class);
     }
+
+
+    /**
+     * @return BelongsTo
+     */
+    public function user(): BelongsTo
+    {
+        return $this->belongsTo(User::class);
+    }
 }
