@@ -1,5 +1,5 @@
 
-# Simple Laravel 9 Blog App 
+# Simple Laravel Blog 
 ### Post, Comment and Authentication
 
 # Requirements
