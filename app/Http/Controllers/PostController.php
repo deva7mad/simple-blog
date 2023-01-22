@@ -100,7 +100,7 @@ class PostController extends Controller
         $data = $request->validated();
 
         if ($request->has('image')) {
-            Storage::delete(asset('images/'. $post->image));
+            Storage::delete(asset('storage/images/'. $post->image));
             $data['image'] = Uploader::upload($data['image']);
         }
 
@@ -119,7 +119,7 @@ class PostController extends Controller
     public function destroy(Post $post): RedirectResponse
     {
         if ($post->image) {
-            Storage::delete(asset('images/'. $post->image));
+            Storage::delete(asset('storage/images/'. $post->image));
         }
 
         $post->comments()->delete();

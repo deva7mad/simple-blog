@@ -50,3 +50,16 @@ php artisan serve
 ````
 #### <i>You </i> can access dashboard with any generated user email and password will be (password) 
 
+
+### <i>6. Test the app with (UnitTest) </i>
+````
+php artisan test --coverage
+````
+### <i>7. Generate a dashboard to monitor test coverage </i>
+
+````
+vendor/bin/phpunit --coverage-html reports/
+
+````
+#### <i> Make sure to enable XDEBUG </i> 
+

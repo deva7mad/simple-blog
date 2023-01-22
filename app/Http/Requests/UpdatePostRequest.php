@@ -24,7 +24,7 @@ class UpdatePostRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'title' => 'required|alpha|min:10|max:250|unique:posts,title,'.request()->post->id,
+            'title' => 'required|min:10|max:250|unique:posts,title,'.request()->post->id,
             'image' => ['nullable', 'image', 'mimes:jpeg,png,jpg,webp', 'max:2048'],
             'content' => ['required', 'min:20'],
         ];
